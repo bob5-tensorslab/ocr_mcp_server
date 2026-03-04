@@ -1,0 +1,32 @@
+{
+  "name": "ocr-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP server for Quark Vision OCR API",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "ocr-mcp": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts",
+    "inspector": "npx @modelcontextprotocol/inspector node dist/index.js"
+  },
+  "keywords": [
+    "mcp",
+    "ocr",
+    "quark",
+    "vision"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "typescript": "^5.3.3",
+    "tsx": "^4.7.0"
+  }
+}
