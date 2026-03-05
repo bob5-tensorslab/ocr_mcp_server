@@ -13,7 +13,7 @@ A Model Context Protocol (MCP) server that enables LLMs to perform optical chara
 ## Installation
 
 ```bash
-cd mcp
+cd ocr_mcp_server
 npm install
 npm run build
 ```
@@ -30,6 +30,8 @@ cp .env.example .env
 Required environment variables:
 - `QUARK_CLIENT_ID` - Your Quark API client ID
 - `QUARK_CLIENT_KEY` - Your Quark API client secret
+
+> Apply for credentials at: https://scan-business.quark.cn
 
 ## Usage
 
@@ -125,7 +127,7 @@ To use this server with Claude Desktop or other MCP clients, add the server to y
   "mcpServers": {
     "ocr": {
       "command": "node",
-      "args": ["D:/skills/ocr-mcp-server/dist/index.js"],
+      "args": ["D:\\path\\to\\ocr-mcp-server\\dist\\index.js"],
       "env": {
         "QUARK_CLIENT_ID": "your_client_id",
         "QUARK_CLIENT_KEY": "your_client_key"

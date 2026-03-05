@@ -22,6 +22,7 @@
 **1. 安装依赖**
 
 ```bash
+cd ocr_mcp_server
 npm install
 npm run build
 ```
