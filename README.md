@@ -1,5 +1,7 @@
 # Quark Vision OCR MCP Server
 
+**English | [中文](./README.zh-CN.md)**
+
 A Model Context Protocol (MCP) server that enables LLMs to perform optical character recognition (OCR) using the Quark Vision API.
 
 ## Features
@@ -125,8 +127,8 @@ To use this server with Claude Desktop or other MCP clients, add the server to y
       "command": "node",
       "args": ["D:/skills/ocr-mcp-server/dist/index.js"],
       "env": {
-        "QUARK_CLIENT_ID": "BACK_P498ZRX7DGCSP9UIM4WG",
-        "QUARK_CLIENT_KEY": "u1DuU6cxnSQond5CYSa4V3rfC9MvPQlFZojnwySD"
+        "QUARK_CLIENT_ID": "your_client_id",
+        "QUARK_CLIENT_KEY": "your_client_key"
       }
     }
   }
